@@ -2,7 +2,7 @@
 #include "Human.hpp"
 
 int		main(void){
-	Brain	ptr;
-	ptr.identify();
-	return (0);
+	Human	bob;
+	std::cout << bob.identify() << std::endl;
+	std::cout << bob.getBrain().identify() << std::endl;
 }

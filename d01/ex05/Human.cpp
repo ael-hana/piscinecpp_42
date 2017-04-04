@@ -1,10 +1,17 @@
 #include "Human.hpp"
-Human::Human(){
+#include "Brain.hpp"
 
+Human::Human(){
 }
 Human::~Human(){
-
 }
-Brain	*Human::getBrain(){
-	return (NULL);
+
+std::string		Human::identify()
+{
+	return this->_ins.identify();
+}
+
+Brain	&Human::getBrain()
+{
+	return (this->_ins);
 }

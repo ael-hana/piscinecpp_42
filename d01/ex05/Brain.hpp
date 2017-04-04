@@ -1,15 +1,16 @@
 #ifndef BRAIN
 # define BRAIN
-
+# include <iostream>
 class Brain
 {
 
-const	int		life = 80;
 
 public:
+	const int		life;
 	Brain();
 	~Brain();
-	void	identify();
-	
+	std::string		identify();
+	std::string		pointer;
+
 };
 #endif
